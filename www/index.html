@@ -514,6 +514,15 @@ window.addEventListener('unload', () => {
     }
 });
 // 背景色切り替え
+document.addEventListener('DOMContentLoaded', function() {
+    const themeButton = document.getElementById('themeButton');
+    themeButton.addEventListener('click', function() {
+        document.body.classList.toggle('dark');
+    });
+});
+
+
+// 背景色切り替え
 $('#themeButton').on('click', () => {
     $('body').toggleClass('dark');
 });
