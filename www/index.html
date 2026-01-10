@@ -513,6 +513,10 @@ window.addEventListener('unload', () => {
         postsListener = null;
     }
 });
+// 背景色切り替え
+$('#themeButton').on('click', () => {
+    $('body').toggleClass('dark');
+});
     </script>
 </head>
 <body>
